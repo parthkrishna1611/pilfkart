@@ -1,0 +1,29 @@
+<!--
+<html>
+  <body>
+	<h1>Index</h1>
+	<ol>
+	{% for item in items %}	
+		{% for i in item %}
+			<li>{{ i }}</li>
+		{% endfor %}
+	{% endfor %}
+	</ol>
+</body>
+</html>
+-->
+<html>
+  <body>
+	<h1>Index</h1>
+	<table>
+	  <tr>{% for item in items %}</tr>	
+		{% for i in item %}
+			<td>
+			  {{ i }}
+			  <hr>
+			</td>
+		{% endfor %}
+	{% endfor %}
+	</table>
+</body>
+</html>
